@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: treecare
+Version: 0.1.0
+Summary: PDF exam segmentation with Document AI
+Author: TreeCare
+Requires-Python: >=3.10
+Requires-Dist: google-cloud-documentai>=2.26.0
+Requires-Dist: fastapi>=0.111.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: PyMuPDF>=1.24.0
+Requires-Dist: Pillow>=10.3.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pydantic>=2.7.0
+Requires-Dist: tqdm>=4.66.0

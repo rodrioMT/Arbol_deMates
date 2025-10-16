@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "treecare"
+version = "0.1.0"
+description = "PDF exam segmentation with Document AI"
+authors = [{name="TreeCare"}]
+requires-python = ">=3.10"
+dependencies = [
+  "google-cloud-documentai>=2.26.0",
+  "fastapi>=0.111.0",
+  "uvicorn[standard]>=0.30.0",
+  "PyMuPDF>=1.24.0",
+  "Pillow>=10.3.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.7.0",
+  "tqdm>=4.66.0"
+]
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[project.scripts]
+treecare = "treecare.cli:main"

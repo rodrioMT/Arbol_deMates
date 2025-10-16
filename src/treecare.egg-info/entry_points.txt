@@ -1,0 +1,2 @@
+[console_scripts]
+treecare = treecare.cli:main
